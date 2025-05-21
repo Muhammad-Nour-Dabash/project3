@@ -1,1 +1,2 @@
 - npx create-next-app@latest project3 --experimental-app --ts
+- npm install lucide-react
