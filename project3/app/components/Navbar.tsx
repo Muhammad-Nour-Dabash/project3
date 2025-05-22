@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react"; // install: npm install lucide-react
 const links = [
   { href: "/", label: "Home" },
   { href: "/dashboard", label: "Dashboard" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
