@@ -1,8 +1,8 @@
 import SecretData from "../components/SecretData";
 
 async function getGreeting() {
-  // const res = await fetch("http://localhost:3000/api/greeting", {
-  const res = await fetch("/api/greeting", {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const res = await fetch(`${baseUrl}/api/greeting`, {
     // Important: Force fetch from server (not cache)
     cache: "no-store",
   });
