@@ -1,7 +1,8 @@
 import SecretData from "../components/SecretData";
 
 async function getGreeting() {
-  const res = await fetch("http://localhost:3000/api/greeting", {
+  // const res = await fetch("http://localhost:3000/api/greeting", {
+  const res = await fetch("/api/greeting", {
     // Important: Force fetch from server (not cache)
     cache: "no-store",
   });
